@@ -1,13 +1,10 @@
-a = int(input("Nhap so trang can in: "))
-b = int(input("Nhap loai giay can in: "))
-
-if b == 1:
-    soto = a
+so_trang_can_in = int(input("Nhap so trang can in: "))
+loai_giay = int(input("Nhap loai giay can in: "))
+if loai_giay == 1:
+    so_to = so_trang_can_in
 else:
-    if a % 2 == 0:
-        so_to = a/2
+    if so_trang_can_in % 2 == 0:
+        so_to = so_trang_can_in/2
     else:
-        soto = int(a/2 +1)
-        
-print(f"so to giay can la: {soto}")
-        
+        so_to = int(so_trang_can_in/2 +1)
+print(f"so to giay can la: {so_to}")
